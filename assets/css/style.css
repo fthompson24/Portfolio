@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #1e3d59;
+    --secondary-color: #f5f0e1;
+    --tertiary-color: #ff6e40;
+    --quarternary-color: #ffc13b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.3;
+}
+
+/*HEADER*/
+
+body {
+    color: var(--tertiary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: var(--primary-color);
+    z-index: 9999;
+    background-image: url("../images/web-design.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+}
+header h1 { 
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--primary-color);
+    background: var(--quarternary-color);
+    border-radius: 50px;
+    padding: 20px 35px;
+}
+
+header a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+header h1 a {
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+header nav {
+    margin: 7px 20px;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    font-weight: bold;
+    padding: 10px 25px;
+    font-size: 1.55vw;
+    text-shadow: none;
+    background: rgba(30, 61, 89, 0.75);
+    border-radius: 15px;
+    margin: 20px;
+}
+header nav ul li a:hover {
+    background:var(--tertiary-color);
+    color: rgba(30, 61, 89, 0.75);
+    text-shadow: 10px 10px 20px var(--quarternary-color);
+}
+
+section {
+    padding: 60px;
+}
+
+/*HERO*/
+
+.hero {
+    background-image: url(../images/web-design.jpg);
+    background-size: cover;
+    background-position: 80%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-attachment: fixed;
+}
+.hero-text {
+    border: none;
+    background-color: rgba(30, 61, 89, 0.75);
+    color: var(--secondary-color);
+    width: 60%;
+    text-align: left;
+    margin: 2.5%;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 10px;
+    border-left: 15px solid var(--tertiary-color)
+}
+.hero-text h2 {
+    font-style: italic;
+    font-size: 45px;
+    color: var(--quarternary-color);
+}
+.hero-text h3 {
+    font-size: 25px;
+    color: var(--quarternary-color);
+}
+.hero-text ul {
+    list-style: none;
+    padding: 10px;
+    
+}
+.hero-text ul li {
+    color: var(--primary-color);
+    margin: 15px 0;
+    font-weight: bold;
+    background: rgba(245, 240, 225, 0.7);
+    padding: 10px;
+}
+
+.hero-img img {
+    width: 60%;
+    border: 10px solid var(--tertiary-color);
+    border-radius: 50%;
+}
