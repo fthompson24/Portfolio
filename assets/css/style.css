@@ -17,6 +17,7 @@
 body {
     color: var(--tertiary-color);
     font-family: Arial, Helvetica, sans-serif;
+    background: #f5f0e1;
 }
 
 header {
@@ -130,4 +131,223 @@ section {
     width: 60%;
     border: 10px solid var(--tertiary-color);
     border-radius: 50%;
+}
+/*HERO ENDS*/
+
+/*SECTION TITLE STYLE*/
+.section-title-primary {
+    font-size: 53px;
+    padding: 20px;
+    color: var(--secondary-color);
+    text-align: left;
+    border-right: 5px solid var(--quarternary-color);
+    width: auto;
+}
+.section-title-secondary {
+    font-size: 53px;
+    padding: 20px;
+    color: var(--primary-color);
+    text-align: left;
+    border-right: 5px solid var(--tertiary-color);
+    width: auto;
+}
+
+.flex-row {
+    display: flex;
+}
+
+/*ABOUT ME STARTS*/
+.myself {
+    margin: 50px auto;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.myself h3 {
+    font-size: 46px;
+    flex: 1 30%;
+}
+.myself-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about-text {
+    flex: 12;
+}
+.about-text p {
+    font-size: 18px;
+    color: var(--quarternary-color)
+}
+.myself-img img {
+    width: 20vw;
+    display: flex;
+    border: 3px solid var(--tertiary-color);
+    border-radius: 50%;
+}
+.fraser {
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;    
+}
+
+/*MY WORK STARTS*/
+
+.works {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.app-container {
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 6fr);
+    border: none;
+    grid-gap: 5px;
+}
+.app-item {
+    padding: 15px 0;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.app-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.application {
+    margin: 20px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    flex: 1;
+    width:100%; 
+    height: 100%;
+}
+.application a {
+    text-decoration: none;
+}
+.application:hover .app-img::after {
+    opacity: 1;
+}
+.app-1 {
+    background-image: url("../images/run-buddy.png");
+}
+.app-2 {
+    background-image: url("../images/horiseon.png");
+}
+.app-3 {
+    background-image: url("../images/placeholder.jpg")
+}
+.app-4 {
+    background-image: url("../images/placeholder.jpg");
+}
+.app-img {
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+.app-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( rgba(245, 240, 225, 0.5), var(--primary-color));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 2s;
+}
+.app-img h3 {
+    position: relative;
+    z-index: 9500;
+    font-size: 30px;
+    border-radius: 15px;
+    top: 200px;
+    transition: 1s;
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    padding: 2px
+}
+.app-info {
+    padding: 20px;
+}
+.app-info h3 {
+    font-size: 25px;
+    display: none;
+}
+.app-info p {
+    font-size: 17px;
+    text-align: center;
+}
+.application:hover .app-img h3 {
+    top:0px;
+}
+
+
+
+/*SPECIFIC MATCH*/
+.app-item.main {
+    grid-column: 1 / -1;
+    grid-row: 1
+}
+.app-item.secondary {
+    grid-row: 2;
+}
+
+/*REACH OUT SECTION*/
+.contact {
+    background: var(--primary-color); 
+    display: flex;
+}
+.contact-info {
+    color: var(--secondary-color);
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-info > * {
+    flex:1 ;
+    margin: 15px;
+}
+.contact-info p {
+    margin: 20px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 2;
+}
+.contact-info a {
+    color: var(--quarternary-color);
+    text-decoration: none;
+}
+
+/*FOOTER STARTS*/
+
+.footer {
+    background: var(--secondary-color);
+    width: 100%;
+    padding: 40px;
+
+}
+footer h2 {
+    color:red;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
 }
